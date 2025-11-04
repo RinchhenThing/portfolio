@@ -4,128 +4,100 @@ import LaptopImg from "../../assets/home-main.svg";
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
-  AiOutlineTwitter
+  AiOutlineTwitter,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
-import { SiLeetcode } from "react-icons/si";
-
-
 
 const About = () => {
-    return (
-        <Container fluid className="home-about-section" id="about">
-          <Container>
-            <Row>
-              <Col md={8} className="home-about-description">
-                <h1 style={{ fontSize: "2.6em" }}>
-                  LET ME <span className="yellow"> INTRODUCE </span> MYSELF
-                </h1>
-                <p className="home-about-body">
-                 Hi, my name is <span className="yellow">Md Abu Bakkar Siddiqe Sajib </span>
-                 and I'm from <span className="yellow"> Dhaka, Bangladesh.</span>
-                <br />
-                <br />
-                I recently graduated with a Bachelor's degree in Computer Science and Engineering in 2021.
-                <br />
-                <br />
-                  As a
-                  <b className="yellow"> Full-Stack </b>developer,  
-                  I enjoy tackling new challenges and continuously expanding my skillset.
-                  <br />
-                  <br />I am proficient in
-                    <b className="yellow"> Javascript, </b>
-                    as well as have knowledge in programming languages such as C, Java, Python,
-                  <b className="yellow"> GraphQL, and Solidity.</b>
-                  <br />
-                  <br />
-                  I have a passion for working
-                  with <b className="yellow">Node.js, MongoDB,</b> and
-                  <i>
-                    <b className="yellow">
-                      {" "}
-                      modern Javascript libraries and frameworks
-                    </b>
-                  </i>
-                  &nbsp; like
-                  <i>
-                    <b className="yellow"> React.js</b>
-                  </i>
-                  <br />
-                  <br />
-                  I am also interested in building new
-                  <i>
-                    <b className="yellow"> Web Technologies and Products, </b>
-                    as well as exploring areas related to
-                    <b className="yellow"> Artificial Intelligence.</b>
-                  </i>
-                  <br />
-                  
-                </p>
-              </Col>
-              <Col md={4} className="myAvtar">
-                <Tilt>
-                  <img src={LaptopImg} className="img-fluid" alt="avatar" />
-                </Tilt>
-              </Col>
-            </Row>
-            <Row>
-              <Col md={12} className="home-about-social">
-                <h1>FIND ME ON</h1>
-                <p>
-                Please don't hesitate to reach out to me and <span className="yellow">connect.</span>
-                </p>
-                <ul className="home-about-social-links">
-                  <li className="social-icons">
-                    <a
-                      href="https://github.com/19sajib"
-                      target="_blank"
-                      rel="noreferrer"
-                      className="icon-colour  home-social-icons"
-                      aria-label="github"
-                    >
-                      <AiFillGithub />
-                    </a>
-                  </li>
-                  <li className="social-icons">
-                    <a
-                      href="https://twitter.com/19sajib"
-                      target="_blank"
-                      rel="noreferrer"
-                      className="icon-colour  home-social-icons"
-                      aria-label="twitter"
-                    >
-                      <AiOutlineTwitter />
-                    </a>
-                  </li>
-                  <li className="social-icons">
-                    <a
-                      href="https://www.linkedin.com/in/19sajib/"
-                      target="_blank"
-                      rel="noreferrer"
-                      className="icon-colour  home-social-icons"
-                      aria-label="linkedin"
-                    >
-                      <FaLinkedinIn />
-                    </a>
-                  </li>
-                  <li className="social-icons">
-                    <a
-                      href="https://leetcode.com/19sajib/"
-                      target="_blank"
-                      rel="noreferrer"
-                      className="icon-colour home-social-icons"
-                      aria-label="instagram"
-                    >
-                      <SiLeetcode />
-                    </a>
-                  </li>
-                </ul>
-              </Col>
-            </Row>
-          </Container>
-        </Container>
-      );
-    
-}
+  return (
+    <Container fluid className="home-about-section" id="about">
+      <Container>
+        <Row>
+          <Col md={8} className="home-about-description">
+            <h1 style={{ fontSize: "2.6em" }}>
+              LET ME <span className="yellow"> INTRODUCE </span> MYSELF
+            </h1>
+            <p className="home-about-body">
+              Hi, I’m <span className="yellow">Rinchhen Thing</span>, a passionate student at{" "}
+              <span className="yellow">Islington College, Nepal</span>, pursuing a degree in{" "}
+              <b className="yellow">Computer Networking and IT Security.</b>
+              <br />
+              <br />
+              I am an aspiring <b className="yellow">Network Engineer</b> currently pursuing my{" "}
+              <b className="yellow">CCNA certification</b> to strengthen my skills in
+              networking technologies and infrastructure.
+              <br />
+              <br />
+              Alongside my studies, I’m working as a{" "}
+              <b className="yellow">DevOps Engineer</b> at{" "}
+              <b className="yellow">Brahmabytelab Pvt. Ltd.</b>, where I gain hands-on experience
+              in automation, cloud deployment, and modern DevOps practices.
+              <br />
+              <br />
+              My goal is to build a strong bridge between{" "}
+              <b className="yellow">Network Engineering</b> and{" "}
+              <b className="yellow">DevOps</b>, integrating security, scalability, and performance
+              into every system I design.
+              <br />
+              <br />
+              Beyond my core focus, I also enjoy exploring{" "}
+              <b className="yellow">Web Development</b> and{" "}
+              <b className="yellow">Emerging Technologies</b> such as AI and IoT.
+            </p>
+          </Col>
+          <Col md={4} className="myAvtar">
+            <Tilt>
+              <img src={LaptopImg} className="img-fluid" alt="avatar" />
+            </Tilt>
+          </Col>
+        </Row>
+        <Row>
+          <Col md={12} className="home-about-social">
+            <h1>FIND ME ON</h1>
+            <p>
+              Feel free to <span className="yellow">connect</span> with me or check out my work!
+            </p>
+            <ul className="home-about-social-links">
+              <li className="social-icons">
+                <a
+                  href="https://github.com/RinchhenThing"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour home-social-icons"
+                  aria-label="github"
+                >
+                  <AiFillGithub />
+                </a>
+              </li>
+              <li className="social-icons">
+                <a
+                  href="https://twitter.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour home-social-icons"
+                  aria-label="twitter"
+                >
+                  <AiOutlineTwitter />
+                </a>
+              </li>
+              <li className="social-icons">
+                <a
+                  href="https://www.linkedin.com/in/rinchhenthing/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour home-social-icons"
+                  aria-label="linkedin"
+                >
+                  <FaLinkedinIn />
+                </a>
+              </li>
+              
+            </ul>
+          </Col>
+        </Row>
+      </Container>
+    </Container>
+  );
+};
 
-export default About
+export default About;
