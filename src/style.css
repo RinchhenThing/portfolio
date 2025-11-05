@@ -1,4 +1,4 @@
-html {
+/* html {
     --section-background-color: linear-gradient(
       to bottom left,
       rgb(5, 8, 40), rgb(1, 4, 39)
@@ -11,7 +11,23 @@ html {
   
     --imp-text-color: #7500fa;
     --imp-bold-text-color: #7500fa;
-  }
+  } */
+
+  html {
+  --section-background-color: linear-gradient(
+    to bottom right,
+    #000000, #1a1a1a
+  );
+
+  --image-gradient: linear-gradient(
+    to bottom right,
+    rgba(0, 0, 0, 0.8), rgba(50, 50, 50, 0.9)
+  );
+
+  --imp-text-color: #ffffff; /* pure white */
+  --imp-bold-text-color: #cccccc; /* soft white/gray */
+}
+
   
   .yellow {
     color: var(--imp-bold-text-color) !important;

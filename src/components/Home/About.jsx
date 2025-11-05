@@ -1,11 +1,9 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import LaptopImg from "../../assets/home-main.svg";
 import Tilt from "react-parallax-tilt";
-import {
-  AiFillGithub,
-  AiOutlineTwitter,
-} from "react-icons/ai";
+import LaptopImg from "../../assets/home-main.svg";
+// import LaptopImg from "../../assets/home-main.svg?url";
+import { AiFillGithub, AiOutlineTwitter } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
 const About = () => {
@@ -17,40 +15,39 @@ const About = () => {
             <h1 style={{ fontSize: "2.6em" }}>
               LET ME <span className="yellow"> INTRODUCE </span> MYSELF
             </h1>
+
             <p className="home-about-body">
               Hi, I’m <span className="yellow">Rinchhen Thing</span>, a passionate student at{" "}
               <span className="yellow">Islington College, Nepal</span>, pursuing a degree in{" "}
               <b className="yellow">Computer Networking and IT Security.</b>
               <br />
               <br />
-              I am an aspiring <b className="yellow">Network Engineer</b> currently pursuing my{" "}
-              <b className="yellow">CCNA certification</b> to strengthen my skills in
-              networking technologies and infrastructure.
+              I’m an aspiring <b className="yellow">Network Engineer</b> currently pursuing my{" "}
+              <b className="yellow">CCNA certification</b> to strengthen my skills in networking
+              technologies and infrastructure.
               <br />
               <br />
-              Alongside my studies, I’m working as a{" "}
-              <b className="yellow">DevOps Engineer</b> at{" "}
-              <b className="yellow">Brahmabytelab Pvt. Ltd.</b>, where I gain hands-on experience
-              in automation, cloud deployment, and modern DevOps practices.
+              I also work as a <b className="yellow">DevOps Engineer</b> at{" "}
+              <b className="yellow">Brahmabytelab Pvt. Ltd.</b>, gaining hands-on experience in
+              automation, cloud deployment, and modern DevOps practices.
               <br />
               <br />
-              My goal is to build a strong bridge between{" "}
-              <b className="yellow">Network Engineering</b> and{" "}
-              <b className="yellow">DevOps</b>, integrating security, scalability, and performance
-              into every system I design.
+              My goal is to bridge the gap between <b className="yellow">Network Engineering</b> and{" "}
+              <b className="yellow">DevOps</b>, focusing on security, scalability, and performance.
               <br />
               <br />
-              Beyond my core focus, I also enjoy exploring{" "}
-              <b className="yellow">Web Development</b> and{" "}
-              <b className="yellow">Emerging Technologies</b> such as AI and IoT.
+              Besides that, I love exploring <b className="yellow">Web Development</b>,{" "}
+              <b className="yellow">AI</b>, and <b className="yellow">IoT</b>.
             </p>
           </Col>
+
           <Col md={4} className="myAvtar">
             <Tilt>
               <img src={LaptopImg} className="img-fluid" alt="avatar" />
             </Tilt>
           </Col>
         </Row>
+
         <Row>
           <Col md={12} className="home-about-social">
             <h1>FIND ME ON</h1>
@@ -69,6 +66,7 @@ const About = () => {
                   <AiFillGithub />
                 </a>
               </li>
+
               <li className="social-icons">
                 <a
                   href="https://twitter.com/"
@@ -80,6 +78,7 @@ const About = () => {
                   <AiOutlineTwitter />
                 </a>
               </li>
+
               <li className="social-icons">
                 <a
                   href="https://www.linkedin.com/in/rinchhenthing/"
@@ -91,7 +90,6 @@ const About = () => {
                   <FaLinkedinIn />
                 </a>
               </li>
-              
             </ul>
           </Col>
         </Row>
