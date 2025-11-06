@@ -551,20 +551,23 @@
 }
 
 .project-card-view {
-  box-shadow: 0 4px 5px 3px rgb(72, 0, 155) !important;
-  /* box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important; */
-  color: white !important;
-  background-color: transparent !important;
-  opacity: 0.9 !important;
-  transition: all 0.5s ease 0s !important;
-  height: 100% !important;
+  border: 2px solid rgba(255, 255, 255, 0.4) !important;
+  background: rgba(255, 255, 255, 0.08) !important; /* soft white overlay */
+  backdrop-filter: blur(6px) !important; /* frosted glass effect */
+  -webkit-backdrop-filter: blur(6px) !important; /* for Safari */
+  border-radius: 12px !important;
+  box-shadow: 0 4px 6px rgba(117, 0, 250, 0.5) !important;
+  transition: all 0.3s ease-in-out !important;
 }
+
 .project-card-view:hover {
-  transform: scale(1.02) !important;
-  overflow: hidden !important;
-  /* box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important; */
-  box-shadow: 0 4px 5px 3px rgba(117, 0, 250, 1) !important;
+  transform: scale(1.03) !important;
+  border: 3px solid rgba(255, 255, 255, 0.9) !important;
+  background: rgba(255, 255, 255, 0.12) !important; /* slightly brighter white */
+  box-shadow: 0 4px 15px rgba(117, 0, 250, 0.9) !important;
 }
+
+
 
 .blog-card {
   padding-top: 50px !important;
