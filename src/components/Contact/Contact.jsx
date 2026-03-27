@@ -23,7 +23,7 @@ const Contact = () => {
     {
       name: "X / Twitter",
       icon: <AiOutlineTwitter />,
-      link: "https://x.com/",
+      link: "https://x.com/RinchhenT61256",
       color: "#1DA1F2",
       desc: "Daily tech thoughts & updates",
     },
