@@ -31,7 +31,7 @@ const Social = () => {
                   </li>
                   <li className="contact-icons">
                     <a
-                      href="#"
+                      href="https://x.com/"
                       target="_blank"
                       rel="noreferrer"
                       className="icon-color  contact-social-icons"

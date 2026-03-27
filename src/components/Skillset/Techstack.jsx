@@ -7,7 +7,6 @@ import {
   SiGithubactions,
   SiJenkins,
   SiTerraform,
-  SiLinux,
   SiCloudflare,
   SiKubernetes
 } from "react-icons/si";
