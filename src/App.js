@@ -11,6 +11,8 @@ import Skill from './pages/Skillset'
 import Project from './pages/Projects'
 import Resume from './pages/Resume'
 import Contact from './pages/Contact'
+import Blog from './pages/Blog';
+import PostDetail from './pages/PostDetail';
 
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
@@ -45,6 +47,8 @@ function App() {
           <Route path="/resume" element={<Resume />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<Navigate to="/"/>} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:slug" element={<PostDetail />} />
         </Routes>
         <Footer />
       </div>

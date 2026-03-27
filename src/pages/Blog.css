@@ -1,0 +1,73 @@
+.blog-section {
+  padding-top: 150px !important;
+  min-height: 100vh;
+}
+
+.blog-card-col {
+  padding: 15px;
+}
+
+.fancy-card {
+  display: block;
+  aspect-ratio: 1 / 1; /* Makes the card a perfect square */
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(200, 137, 230, 0.1);
+  border-radius: 15px;
+  text-decoration: none !important;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Hover Effect: Glowing border and slight lift */
+.fancy-card:hover {
+  transform: translateY(-10px);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: #cd5ff3;
+  box-shadow: 0 10px 30px rgba(200, 137, 230, 0.2);
+}
+
+.card-content {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  text-align: left;
+}
+
+.post-category {
+  color: #cd5ff3;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.post-title {
+  color: white !important;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.post-description {
+  color: #adb5bd;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.card-footer {
+  margin-top: auto; /* Pushes to bottom of the square */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #cd5ff3;
+  font-weight: 500;
+  opacity: 0.7;
+}
+
+.fancy-card:hover .card-footer {
+  opacity: 1;
+}

@@ -1,0 +1,52 @@
+.post-container {
+  padding-top: 120px !important; /* Massive gap for the navbar */
+  padding-bottom: 80px;
+  min-height: 100vh;
+  background: transparent;
+  color: #fff;
+  text-align: left;
+}
+
+.post-header {
+  margin-bottom: 40px;
+}
+
+.post-main-title {
+  font-size: 3rem !important;
+  color: #cd5ff3 !important; /* Theme Purple */
+  font-weight: 700;
+}
+
+.post-date {
+  color: #adb5bd;
+  font-style: italic;
+}
+
+.post-divider {
+  border-top: 2px solid rgba(200, 137, 230, 0.3);
+  margin-top: 20px;
+}
+
+/* Styling the Markdown content itself */
+.markdown-body {
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+.markdown-body h1, .markdown-body h2 {
+  color: #cd5ff3;
+  margin-top: 30px;
+}
+
+.markdown-body ul {
+  margin-left: 20px;
+  color: #e0e0e0;
+}
+
+.markdown-body code {
+  background-color: #2d1950;
+  padding: 4px 8px;
+  border-radius: 4px;
+  color: #f8f8f2;
+  font-family: 'Courier New', Courier, monospace;
+}
