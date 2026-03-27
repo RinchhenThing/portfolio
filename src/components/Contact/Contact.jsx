@@ -1,70 +1,82 @@
-import React,{useState, useRef} from 'react'
-import emailjs from "@emailjs/browser";
+import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Button from 'react-bootstrap/Button';
-import './Contact.css'
+import { AiFillGithub, AiOutlineTwitter, AiOutlineMail } from "react-icons/ai";
+import { FaLinkedinIn, FaExternalLinkAlt } from "react-icons/fa";
+import "./Contact.css";
 
 const Contact = () => {
-    const form = useRef();
-    const [done, setDone] = useState(false)
-    const [notDone, setNotDone] = useState(false)
-    const [formData, setFormData] = useState({});
+  const socialLinks = [
+    {
+      name: "GitHub",
+      icon: <AiFillGithub />,
+      link: "https://github.com/RinchhenThing",
+      color: "#333",
+      desc: "Check out my repos & contributions",
+    },
+    {
+      name: "LinkedIn",
+      icon: <FaLinkedinIn />,
+      link: "https://www.linkedin.com/in/rinchhen-thing-764814311/",
+      color: "#0077b5",
+      desc: "Let's connect professionally",
+    },
+    {
+      name: "X / Twitter",
+      icon: <AiOutlineTwitter />,
+      link: "https://x.com/",
+      color: "#1DA1F2",
+      desc: "Daily tech thoughts & updates",
+    },
+    {
+      name: "Email",
+      icon: <AiOutlineMail />,
+      link: "mailto:thingrinchhen@gmail.com",
+      color: "#D44638",
+      desc: "Drop a line for collaborations",
+    },
+  ];
 
-    const handleChange = (e) => {
-        setFormData({...formData, [e.target.name] : e.target.value})
-        setDone(false)
-        setNotDone(false)
-    }
+  return (
+    <Container className="contact-container">
+      <Row className="justify-content-center text-center">
+        <Col md={8}>
+          <h1 className="contact-heading">
+            Let's Start a <strong className="yellow">Conversation</strong>
+          </h1>
+          <p className="contact-description">
+            I’m currently open to new opportunities and interesting projects.
+            Pick your favorite platform below.
+          </p>
+        </Col>
+      </Row>
 
-    const sendEmail = (e) => {
-    e.preventDefault();
-    
-    if(!formData.from_name || !formData.reply_to ||!formData.message){
-      setNotDone(true)
-    } else {
-      
-      //  Please use your own credentials from emailjs or i will recive your email
-      
-    emailjs
-      .sendForm(
-        "service_niilndo",
-        "template_6z5idye",
-        form.current,
-        "VOBt6Akm1LhI5CZG-"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          setDone(true);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-    }
-    };
-    
+      <Row className="contact-grid justify-content-center">
+        {socialLinks.map((social, index) => (
+          <Col lg={3} md={6} sm={12} key={index} className="contact-card-wrapper">
+            <a
+              href={social.link}
+              target="_blank"
+              rel="noreferrer"
+              className="contact-card-link"
+            >
+              <div className="contact-card">
+                <div className="card-icon" style={{ color: social.color }}>
+                  {social.icon}
+                </div>
+                <div className="card-content">
+                  <h3>{social.name}</h3>
+                  <p>{social.desc}</p>
+                </div>
+                <div className="card-arrow">
+                  <FaExternalLinkAlt />
+                </div>
+              </div>
+            </a>
+          </Col>
+        ))}
+      </Row>
+    </Container>
+  );
+};
 
-    return(
-        <Container style={{paddingTop: '50px'}} >
-            <Row >
-            <Col md={6} className="c-left" >
-            <h1 >Get in Touch</h1>
-            <h1 className="yellow">Contact me</h1>
-            </Col>
-            <Col md={6} className="c-right">
-                <form ref={form} onSubmit={sendEmail}>
-                <input type="text" name="from_name" className="user"  placeholder="Name" onChange={handleChange}/>
-                <input type="email" name="reply_to" className="user" placeholder="Email" onChange={handleChange} />
-                <textarea name="message" className="user" placeholder="Message" onChange={handleChange} />
-                <span className='not-done' >{notDone && "Please, fill all the input field"}</span>
-                <Button type="submit" className="button" disabled={done}>Send</Button>
-                <span className='done'>{done && "Thanks for contacting me and be sure i have recieved your mail. If you are testing this functionality then i am confirming this thing working perfectly fine. If you have any serious query then i will reply. Also if you need me, you can conatct me on Linkedin."}</span>
-                </form>
-            </Col>
-            </Row>
-        </Container>
-    )
-}
-
-export default Contact
+export default Contact;
