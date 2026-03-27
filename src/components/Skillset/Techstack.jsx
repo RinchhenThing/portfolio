@@ -12,7 +12,6 @@ import {
   SiKubernetes
 } from "react-icons/si";
 import { FaNetworkWired } from "react-icons/fa";
-import { DiGit } from "react-icons/di";
 
 const Techstack = () => {
   return (
